@@ -7,17 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D018FDF1CFA3B9A00E1BF6B /* ConvertioController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D018FDE1CFA3B9A00E1BF6B /* ConvertioController.xib */; };
+		9D018FE31CFAD57500E1BF6B /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D018FE11CFAD57500E1BF6B /* Fabric.framework */; };
+		9D018FE41CFAD57500E1BF6B /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D018FE21CFAD57500E1BF6B /* Crashlytics.framework */; };
+		9D1CDB001CF771EC003D1D8C /* Currencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1CDAFF1CF771EC003D1D8C /* Currencies.swift */; };
 		9D3337291CF4CFCA00C93918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3337281CF4CFCA00C93918 /* AppDelegate.swift */; };
 		9D33372B1CF4CFCA00C93918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D33372A1CF4CFCA00C93918 /* Assets.xcassets */; };
 		9D33372E1CF4CFCA00C93918 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D33372C1CF4CFCA00C93918 /* MainMenu.xib */; };
+		9D3337371CF4EBF600C93918 /* ConvertioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3337351CF4EBF600C93918 /* ConvertioController.swift */; };
+		9D33373A1CF4F0FD00C93918 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3337391CF4F0FD00C93918 /* NetworkUtils.swift */; };
+		9D33373C1CF5A1BA00C93918 /* CurrencyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33373B1CF5A1BA00C93918 /* CurrencyDelegate.swift */; };
+		9DC9CEFF1CF8D39300F819BC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC9CEFD1CF8D39300F819BC /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		9DC9CF031CF8D4F600F819BC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC9CEFD1CF8D39300F819BC /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9DC9CF041CF8D4F600F819BC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC9CEFE1CF8D39300F819BC /* SwiftyJSON.framework */; };
+		9DC9CF051CF8D4F600F819BC /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC9CEFE1CF8D39300F819BC /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9DC9CF061CF8D4F600F819BC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9DC9CF051CF8D4F600F819BC /* SwiftyJSON.framework in Embed Frameworks */,
+				9DC9CF031CF8D4F600F819BC /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9D018FDE1CFA3B9A00E1BF6B /* ConvertioController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConvertioController.xib; sourceTree = "<group>"; };
+		9D018FE11CFAD57500E1BF6B /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		9D018FE21CFAD57500E1BF6B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		9D1CDAFF1CF771EC003D1D8C /* Currencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currencies.swift; sourceTree = "<group>"; };
 		9D3337251CF4CFCA00C93918 /* Convertio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Convertio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3337281CF4CFCA00C93918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D33372A1CF4CFCA00C93918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D33372D1CF4CFCA00C93918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9D33372F1CF4CFCA00C93918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D3337351CF4EBF600C93918 /* ConvertioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertioController.swift; sourceTree = "<group>"; };
+		9D3337391CF4F0FD00C93918 /* NetworkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		9D33373B1CF5A1BA00C93918 /* CurrencyDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyDelegate.swift; sourceTree = "<group>"; };
+		9DC9CEFD1CF8D39300F819BC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		9DC9CEFE1CF8D39300F819BC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC9CF041CF8D4F600F819BC /* SwiftyJSON.framework in Frameworks */,
+				9DC9CEFF1CF8D39300F819BC /* Alamofire.framework in Frameworks */,
+				9D018FE41CFAD57500E1BF6B /* Crashlytics.framework in Frameworks */,
+				9D018FE31CFAD57500E1BF6B /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +73,10 @@
 		9D33371C1CF4CFCA00C93918 = {
 			isa = PBXGroup;
 			children = (
+				9D018FE11CFAD57500E1BF6B /* Fabric.framework */,
+				9D018FE21CFAD57500E1BF6B /* Crashlytics.framework */,
+				9DC9CEFD1CF8D39300F819BC /* Alamofire.framework */,
+				9DC9CEFE1CF8D39300F819BC /* SwiftyJSON.framework */,
 				9D3337271CF4CFCA00C93918 /* Convertio */,
 				9D3337261CF4CFCA00C93918 /* Products */,
 			);
@@ -51,6 +94,11 @@
 			isa = PBXGroup;
 			children = (
 				9D3337281CF4CFCA00C93918 /* AppDelegate.swift */,
+				9D3337351CF4EBF600C93918 /* ConvertioController.swift */,
+				9D1CDAFF1CF771EC003D1D8C /* Currencies.swift */,
+				9D3337391CF4F0FD00C93918 /* NetworkUtils.swift */,
+				9D018FDE1CFA3B9A00E1BF6B /* ConvertioController.xib */,
+				9D33373B1CF5A1BA00C93918 /* CurrencyDelegate.swift */,
 				9D33372A1CF4CFCA00C93918 /* Assets.xcassets */,
 				9D33372C1CF4CFCA00C93918 /* MainMenu.xib */,
 				9D33372F1CF4CFCA00C93918 /* Info.plist */,
@@ -68,6 +116,8 @@
 				9D3337211CF4CFCA00C93918 /* Sources */,
 				9D3337221CF4CFCA00C93918 /* Frameworks */,
 				9D3337231CF4CFCA00C93918 /* Resources */,
+				9DC9CF061CF8D4F600F819BC /* Embed Frameworks */,
+				9D018FE01CFAD55F00E1BF6B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -117,11 +167,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D33372B1CF4CFCA00C93918 /* Assets.xcassets in Resources */,
+				9D018FDF1CFA3B9A00E1BF6B /* ConvertioController.xib in Resources */,
 				9D33372E1CF4CFCA00C93918 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D018FE01CFAD55F00E1BF6B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run e39e955f044c3a94a1967a279c26ba5f1aa5fb6a c0288ff1f06f0c335d5dd82d869920eda0c89fc845b5b976f48a35bcedb9b73d";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D3337211CF4CFCA00C93918 /* Sources */ = {
@@ -129,6 +196,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D3337291CF4CFCA00C93918 /* AppDelegate.swift in Sources */,
+				9D33373A1CF4F0FD00C93918 /* NetworkUtils.swift in Sources */,
+				9D3337371CF4EBF600C93918 /* ConvertioController.swift in Sources */,
+				9D33373C1CF5A1BA00C93918 /* CurrencyDelegate.swift in Sources */,
+				9D1CDB001CF771EC003D1D8C /* Currencies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +237,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -233,6 +304,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Convertio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.sahbi.Convertio;
@@ -245,6 +321,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Convertio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.sahbi.Convertio;
@@ -271,6 +352,7 @@
 				9D3337341CF4CFCA00C93918 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

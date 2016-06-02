@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ConvertioController" customModule="Convertio" customModuleProvider="target">
+            <connections>
+                <outlet property="baseCurrencyLabel" destination="aov-89-BO6" id="KVt-Ow-mIk"/>
+                <outlet property="baseFlag" destination="9Bk-0R-Pzo" id="QBK-hA-CqT"/>
+                <outlet property="baseNumber" destination="gqS-X1-qRq" id="XJP-cf-nm6"/>
+                <outlet property="destCurrencyLabel" destination="aRC-R0-0hq" id="nl0-GR-Pka"/>
+                <outlet property="destFlag" destination="SNP-Cq-Zbw" id="R7i-kh-QHj"/>
+                <outlet property="destNumber" destination="ddO-An-bMH" id="wnh-gM-Chs"/>
+                <outlet property="errorLabel" destination="tLY-x7-ne6" id="zoL-Il-Owb"/>
+                <outlet property="placeholder" destination="YHn-Yp-Qdf" id="pwI-qa-Hd0"/>
+                <outlet property="progressIndicator" destination="uYB-bQ-v5U" id="amo-ML-zEt"/>
+                <outlet property="quitBtn" destination="mlr-Fe-Uxt" id="3Kj-Am-taI"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" focusRingType="none" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="uYB-bQ-v5U">
+                    <rect key="frame" x="16" y="109" width="218" height="20"/>
+                </progressIndicator>
+                <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tn2-ft-KAs">
+                    <rect key="frame" x="16" y="204" width="218" height="76"/>
+                    <textFieldCell key="cell" selectable="YES" editable="YES" allowsUndo="NO" state="on" focusRingType="none" alignment="left" placeholderString="Convert x usd to chf" id="XOo-Z9-bFH">
+                        <font key="font" size="16" name="AvenirNext-Medium"/>
+                        <color key="textColor" red="0.18823529411764706" green="0.16078431372549021" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.70816008740480996" green="0.82687435337646298" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="processInput:" target="-2" id="FbX-Fc-2gv"/>
+                    </connections>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xa1-uJ-Q5B">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="42"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="bottom" image="footer" id="gfv-eP-cdA"/>
+                </imageView>
+                <imageView autoresizesSubviews="NO" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YHn-Yp-Qdf">
+                    <rect key="frame" x="-8" y="90" width="265" height="120"/>
+                    <imageCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="placeholder" id="pLi-Rs-NsJ"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gqS-X1-qRq">
+                    <rect key="frame" x="2" y="163" width="124" height="33"/>
+                    <textFieldCell key="cell" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" title="19.5" id="gY1-Yl-SPm">
+                        <font key="font" size="18" name="AvenirNext-Medium"/>
+                        <color key="textColor" red="0.14901960784313725" green="0.16078431372549021" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ddO-An-bMH">
+                    <rect key="frame" x="123" y="163" width="124" height="33"/>
+                    <textFieldCell key="cell" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" title="19.5" id="lZj-N8-qd2">
+                        <font key="font" size="18" name="AvenirNext-Medium"/>
+                        <color key="textColor" red="0.14901960780000001" green="0.16078431369999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aov-89-BO6">
+                    <rect key="frame" x="45" y="136" width="32" height="20"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="USD" id="OVT-aF-3EF">
+                        <font key="font" size="15" name="AvenirNext-Regular"/>
+                        <color key="textColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aRC-R0-0hq">
+                    <rect key="frame" x="171" y="131" width="34" height="25"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="CHF" id="MQ6-Eh-uau">
+                        <font key="font" size="15" name="AvenirNext-Regular"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Bk-0R-Pzo">
+                    <rect key="frame" x="45" y="101" width="37" height="36"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="🇺🇸" id="Hrm-TH-OUF">
+                        <font key="font" size="30" name="AppleColorEmoji"/>
+                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SNP-Cq-Zbw">
+                    <rect key="frame" x="167" y="95" width="37" height="42"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="🇨🇭" id="yf1-SX-2ND">
+                        <font key="font" size="30" name="AppleColorEmoji"/>
+                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mlr-Fe-Uxt">
+                    <rect key="frame" x="207" y="2" width="38" height="32"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="exit_btn" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="H2Z-EM-iPg">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="quitBtnClicked:" target="-2" id="4ZI-Zr-tn8"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tLY-x7-ne6">
+                    <rect key="frame" x="4" y="50" width="243" height="120"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Label" id="j6v-wX-4RD">
+                        <font key="font" size="14" name="AvenirNext-Medium"/>
+                        <color key="textColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <shadow key="shadow">
+                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            </shadow>
+            <point key="canvasLocation" x="550" y="405"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="exit_btn" width="700" height="700"/>
+        <image name="footer" width="250" height="41"/>
+        <image name="placeholder" width="250" height="128"/>
+    </resources>
+</document>
