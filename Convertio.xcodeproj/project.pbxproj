@@ -10,6 +10,7 @@
 		9D018FDF1CFA3B9A00E1BF6B /* ConvertioController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D018FDE1CFA3B9A00E1BF6B /* ConvertioController.xib */; };
 		9D018FE31CFAD57500E1BF6B /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D018FE11CFAD57500E1BF6B /* Fabric.framework */; };
 		9D018FE41CFAD57500E1BF6B /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D018FE21CFAD57500E1BF6B /* Crashlytics.framework */; };
+		9D0940301D00322700ED9F84 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9D09402F1D00322700ED9F84 /* README.md */; };
 		9D1CDB001CF771EC003D1D8C /* Currencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1CDAFF1CF771EC003D1D8C /* Currencies.swift */; };
 		9D3337291CF4CFCA00C93918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3337281CF4CFCA00C93918 /* AppDelegate.swift */; };
 		9D33372B1CF4CFCA00C93918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D33372A1CF4CFCA00C93918 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		9D018FDE1CFA3B9A00E1BF6B /* ConvertioController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConvertioController.xib; sourceTree = "<group>"; };
 		9D018FE11CFAD57500E1BF6B /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		9D018FE21CFAD57500E1BF6B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		9D09402F1D00322700ED9F84 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9D1CDAFF1CF771EC003D1D8C /* Currencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currencies.swift; sourceTree = "<group>"; };
 		9D3337251CF4CFCA00C93918 /* Convertio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Convertio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3337281CF4CFCA00C93918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		9D33371C1CF4CFCA00C93918 = {
 			isa = PBXGroup;
 			children = (
+				9D09402F1D00322700ED9F84 /* README.md */,
 				9D018FE11CFAD57500E1BF6B /* Fabric.framework */,
 				9D018FE21CFAD57500E1BF6B /* Crashlytics.framework */,
 				9DC9CEFD1CF8D39300F819BC /* Alamofire.framework */,
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0940301D00322700ED9F84 /* README.md in Sources */,
 				9D3337291CF4CFCA00C93918 /* AppDelegate.swift in Sources */,
 				9D33373A1CF4F0FD00C93918 /* NetworkUtils.swift in Sources */,
 				9D3337371CF4EBF600C93918 /* ConvertioController.swift in Sources */,
